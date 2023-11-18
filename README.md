@@ -1,5 +1,7 @@
 # Oxe FM Synth
-Welcome to the [Oxe FM Synth](https://oxesoft.wordpress.com/) official repository.
+Welcome to the [Oxe FM Synth](https://oxesoft.wordpress.com/) fork.
+
+This version renders the UI at the double size (useful for HiDPI screens)
 
 ![defaultskin](https://oxesoft.files.wordpress.com/2007/12/screenshot_full.png)
 
@@ -8,6 +10,12 @@ This repository contains the synth core and three different ways to use it:
 - as a [demo](https://en.wikipedia.org/wiki/Demoscene) (for testing synth engine, for profiling or just for fun)
 - as a standalone application (for testing GUI)
 - as a [VST plugin](https://pt.wikipedia.org/wiki/Virtual_Studio_Technology) for Windows (32/64bit), Linux 32/64bit and Mac OS X (64bit)
+
+
+## Installing VST2.4
+- get it from https://github.com/R-Tur/VST_SDK_2.4/tree/master
+- get VST 3 Audio Plug-Ins SDK from https://www.steinberg.net/developers/ and copy vstplugmain.cpp from steinberg vst2sdk/public.sdk/source/vst2.x into VST_SDK_2.4/public.sdk/source/vst2.x from the source above
+- see https://github.com/obiwanjacobi/vst.net/issues/11 to understand the issue with steinberg
 
 ## Building
 

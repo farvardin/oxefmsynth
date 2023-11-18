@@ -96,7 +96,7 @@ CEditor::CEditor(CSynthesizer *synthesizer)
     int hY   = 802;
 
     // display
-    lcd             = new CLcd     (BMP_CHARS, 50,  23);
+    lcd             = new CLcd     (BMP_CHARS, 50,  46);
 
     // OPA
     aX = cX;
@@ -238,7 +238,7 @@ CEditor::CEditor(CSynthesizer *synthesizer)
     aX = mX;
     aY = mY;
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "OPA Self Mod",    synthesizer, channel, VL_MOD,           MAA,     aX       , aY      );
-    ctl[ctlcount++] = new CKey     (BMP_OPS  ,0,20,20,"OPA On/Off",      synthesizer, channel,                   OPAON,   aX       , aY+fY   );
+    ctl[ctlcount++] = new CKey     (BMP_OPS  ,0,40,40,"OPA On/Off",      synthesizer, channel,                   OPAON,   aX       , aY+fY   );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPA->OPB",     synthesizer, channel, VL_MOD,           MAB,     aX       , aY+fY*2 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPA->OPC",     synthesizer, channel, VL_MOD,           MAC,     aX       , aY+fY*3 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPA->OPD",     synthesizer, channel, VL_MOD,           MAD,     aX       , aY+fY*4 );
@@ -250,7 +250,7 @@ CEditor::CEditor(CSynthesizer *synthesizer)
     ctl[ctlcount++] = new CKnob    (BMP_KNOB3,  40,   "OPA Pan",         synthesizer, channel, VL_PAN,           MAP,     aX       , aY+fY*10);
 
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "OPB Self Mod",    synthesizer, channel, VL_MOD,           MBB,     aX+fX    , aY+fY   );
-    ctl[ctlcount++] = new CKey     (BMP_OPS  ,1,20,20,"OPB On/Off",      synthesizer, channel,                   OPBON,   aX+fX    , aY+fY*2 );
+    ctl[ctlcount++] = new CKey     (BMP_OPS  ,1,40,40,"OPB On/Off",      synthesizer, channel,                   OPBON,   aX+fX    , aY+fY*2 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPB->OPC",     synthesizer, channel, VL_MOD,           MBC,     aX+fX    , aY+fY*3 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPB->OPD",     synthesizer, channel, VL_MOD,           MBD,     aX+fX    , aY+fY*4 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPB->OPE",     synthesizer, channel, VL_MOD,           MBE,     aX+fX    , aY+fY*5 );
@@ -261,7 +261,7 @@ CEditor::CEditor(CSynthesizer *synthesizer)
     ctl[ctlcount++] = new CKnob    (BMP_KNOB3,  40,   "OPB Pan",         synthesizer, channel, VL_PAN,           MBP,     aX+fX    , aY+fY*10);
 
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "OPC Self Mod",    synthesizer, channel, VL_MOD,           MCC,     aX+fX*2  , aY+fY*2 );
-    ctl[ctlcount++] = new CKey     (BMP_OPS  ,2,20,20,"OPC On/Off",      synthesizer, channel,                   OPCON,   aX+fX*2  , aY+fY*3 );
+    ctl[ctlcount++] = new CKey     (BMP_OPS  ,2,40,40,"OPC On/Off",      synthesizer, channel,                   OPCON,   aX+fX*2  , aY+fY*3 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPC->OPD",     synthesizer, channel, VL_MOD,           MCD,     aX+fX*2  , aY+fY*4 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPC->OPE",     synthesizer, channel, VL_MOD,           MCE,     aX+fX*2  , aY+fY*5 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPC->OPF",     synthesizer, channel, VL_MOD,           MCF,     aX+fX*2  , aY+fY*6 );
@@ -271,7 +271,7 @@ CEditor::CEditor(CSynthesizer *synthesizer)
     ctl[ctlcount++] = new CKnob    (BMP_KNOB3,  40,   "OPC Pan",         synthesizer, channel, VL_PAN,           MCP,     aX+fX*2  , aY+fY*10);
 
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "OPD Self Mod",    synthesizer, channel, VL_MOD,           MDD,     aX+fX*3  , aY+fY*3 );
-    ctl[ctlcount++] = new CKey     (BMP_OPS  ,3,20,20,"OPD On/Off",      synthesizer, channel,                   OPDON,   aX+fX*3  , aY+fY*4 );
+    ctl[ctlcount++] = new CKey     (BMP_OPS  ,3,40,40,"OPD On/Off",      synthesizer, channel,                   OPDON,   aX+fX*3  , aY+fY*4 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPD->OPE",     synthesizer, channel, VL_MOD,           MDE,     aX+fX*3  , aY+fY*5 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPD->OPF",     synthesizer, channel, VL_MOD,           MDF,     aX+fX*3  , aY+fY*6 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPD->OPX",     synthesizer, channel, VL_MOD,           MDX,     aX+fX*3  , aY+fY*7 );
@@ -280,7 +280,7 @@ CEditor::CEditor(CSynthesizer *synthesizer)
     ctl[ctlcount++] = new CKnob    (BMP_KNOB3,  40,   "OPD Pan",         synthesizer, channel, VL_PAN,           MDP,     aX+fX*3  , aY+fY*10);
 
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "OPE Self Mod",    synthesizer, channel, VL_MOD,           MEE,     aX+fX*4  , aY+fY*4 );
-    ctl[ctlcount++] = new CKey     (BMP_OPS  ,4,20,20,"OPE On/Off",      synthesizer, channel,                   OPEON,   aX+fX*4  , aY+fY*5 );
+    ctl[ctlcount++] = new CKey     (BMP_OPS  ,4,40,40,"OPE On/Off",      synthesizer, channel,                   OPEON,   aX+fX*4  , aY+fY*5 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPE->OPF",     synthesizer, channel, VL_MOD,           MEF,     aX+fX*4  , aY+fY*6 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPE->OPX",     synthesizer, channel, VL_MOD,           MEX,     aX+fX*4  , aY+fY*7 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPE->OPZ",     synthesizer, channel, VL_MOD,           MEZ,     aX+fX*4  , aY+fY*8 );
@@ -288,18 +288,18 @@ CEditor::CEditor(CSynthesizer *synthesizer)
     ctl[ctlcount++] = new CKnob    (BMP_KNOB3,  40,   "OPE Pan",         synthesizer, channel, VL_PAN,           MEP,     aX+fX*4  , aY+fY*10);
 
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "OPF Self Mod",    synthesizer, channel, VL_MOD,           MFF,     aX+fX*5  , aY+fY*5 );
-    ctl[ctlcount++] = new CKey     (BMP_OPS  ,5,20,20,"OPF On/Off",      synthesizer, channel,                   OPFON,   aX+fX*5  , aY+fY*6 );
+    ctl[ctlcount++] = new CKey     (BMP_OPS  ,5,40,40,"OPF On/Off",      synthesizer, channel,                   OPFON,   aX+fX*5  , aY+fY*6 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPF->OPX",     synthesizer, channel, VL_MOD,           MFX,     aX+fX*5  , aY+fY*7 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPF->OPZ",     synthesizer, channel, VL_MOD,           MFZ,     aX+fX*5  , aY+fY*8 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "OPF Output",      synthesizer, channel, VL_MOD,           MFO,     aX+fX*5  , aY+fY*9 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB3,  40,   "OPF Pan",         synthesizer, channel, VL_PAN,           MFP,     aX+fX*5  , aY+fY*10);
 
-    ctl[ctlcount++] = new CKey     (BMP_OPS  ,6,20,20,"OPX On/Off",      synthesizer, channel,                   OPXON,   aX+fX*6  , aY+fY*7 );
+    ctl[ctlcount++] = new CKey     (BMP_OPS  ,6,40,40,"OPX On/Off",      synthesizer, channel,                   OPXON,   aX+fX*6  , aY+fY*7 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "FM OPX->OPZ",     synthesizer, channel, VL_MOD,           MXZ,     aX+fX*6  , aY+fY*8 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "OPX Output",      synthesizer, channel, VL_MOD,           MXO,     aX+fX*6  , aY+fY*9 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB3,  40,   "OPX Pan",         synthesizer, channel, VL_PAN,           MXP,     aX+fX*6  , aY+fY*10);
 
-    ctl[ctlcount++] = new CKey     (BMP_OPS  ,7,20,20,"OPZ On/Off",      synthesizer, channel,                   OPZON,   aX+fX*7  , aY+fY*8 );
+    ctl[ctlcount++] = new CKey     (BMP_OPS  ,7,40,40,"OPZ On/Off",      synthesizer, channel,                   OPZON,   aX+fX*7  , aY+fY*8 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB2,  40,   "OPZ Output",      synthesizer, channel, VL_MOD,           MZO,     aX+fX*7  , aY+fY*9 );
     ctl[ctlcount++] = new CKnob    (BMP_KNOB3,  40,   "OPZ Pan",         synthesizer, channel, VL_PAN,           MZP,     aX+fX*7  , aY+fY*10);
 
