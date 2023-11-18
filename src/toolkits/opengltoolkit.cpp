@@ -28,21 +28,21 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include <stdio.h>
 #include <stdlib.h>
 
-#define TEX_WIDTH     (633 + 250       + 5 /* to align */)
-#define TEX_HEIGHT    (250 + 200 + 200 + 6 /* to align */)
+#define TEX_WIDTH     (1266 + 500       + 10 /* to align */)
+#define TEX_HEIGHT    (500 + 400 + 400 + 12 /* to align */)
 #define PIXEL_BYTES   4 /* RGBA */
 #define TOTAL_INDICES ((1 /*<- bg */ + COORDS_COUNT) * TWO_TRIANGLES)
 
 int texCoods[][2] =
 {
-    {  0, 437}, // BMP_CHARS
-    {633,   0}, // BMP_KNOB
-    {633, 250}, // BMP_KNOB2
-    {633, 450}, // BMP_KNOB3
-    { 80, 437}, // BMP_KEY
+    {  0, 874}, // BMP_CHARS
+    {1266,   0}, // BMP_KNOB
+    {1266, 500}, // BMP_KNOB2
+    {1266, 900}, // BMP_KNOB3
+    { 160, 874}, // BMP_KEY
     {  0,   0}, // BMP_BG
-    {100, 437}, // BMP_BUTTONS
-    {142, 437}  // BMP_OPS
+    {200, 874}, // BMP_BUTTONS
+    {284, 874}  // BMP_OPS
 };
 
 typedef struct __attribute__((packed))

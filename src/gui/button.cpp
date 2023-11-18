@@ -22,8 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "control.h"
 #include "button.h"
 
-#define BUTTON_WIDTH   42
-#define BUTTON_HEIGHT  16
+#define BUTTON_WIDTH   84
+#define BUTTON_HEIGHT  32
 
 CButton::CButton(int bmp, int index, CSynthesizer *synthesizer, char &channel, int type, int x, int y)
 {

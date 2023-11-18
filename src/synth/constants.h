@@ -55,8 +55,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TIMER_RESOLUTION_MS 20
 #define BMP_PATH            "skin"
 #define GUI_CONTROLS        189
-#define GUI_WIDTH           633
-#define GUI_HEIGHT          437
+#define GUI_WIDTH           1266
+#define GUI_HEIGHT          874
 enum
 {
     BMP_CHARS  ,
